@@ -14,3 +14,10 @@ public struct LearnSPM {
         print(myName)
     }
 }
+
+/**
+ Mỗi một folder trong `Sources` là một Target riêng biệt
+ khi một Target này muốn dùng code của Target khác thì phải khai báo trong dependencies
+ 
+ Tương tự, mỗi một folder trong `Tests` là một Test Target riêng biệt
+ */

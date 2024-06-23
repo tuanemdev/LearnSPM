@@ -4,19 +4,27 @@
 import PackageDescription
 
 let package = Package(
-    name: "LearnSPM",
+    name: "LearnSPM", // Tên Package
+    platforms: [ // Nền tảng và version tối thiều hỗ trợ
+        .iOS(.v16),
+        .macOS(.v14)
+    ],
     products: [
-        // Products define the executables and libraries a package produces, making them visible to other packages.
+        // Khai báo các executables và libraries mà package cung cấp, bộc lộ chúng cho các package khác.
         .library(
             name: "LearnSPM",
             targets: ["LearnSPM"]),
     ],
+    dependencies: [ // Khai báo các package khác mà Package này phụ thuộc vào
+        .package(url: "https://github.com/OpenCombine/OpenCombine.git", from: "0.14.0")
+    ],
     targets: [
-        // Targets are the basic building blocks of a package, defining a module or a test suite.
-        // Targets can depend on other targets in this package and products from dependencies.
+        // Targets là các building blocks cơ bản của Package, định nghĩa một module hoặc một bộ thử nghiệm.
+        // Targets có thể phụ thuộc vào các target khác trong package và các product được cung cấp từ dependencies.
         .target(
-            name: "LearnSPM", dependencies: ["OtherTarget"]),
-        .target(name: "OtherTarget"),
+            name: "LearnSPM", dependencies: ["OtherTarget", "OpenCombine"]),
+        .target(
+            name: "OtherTarget"),
         .testTarget(
             name: "LearnSPMTests",
             dependencies: ["LearnSPM"]),
