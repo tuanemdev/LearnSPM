@@ -1,0 +1,26 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "JSON Decode" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Giải mã JSON"
+          }
+        }
+      }
+    },
+    "Learn Swift Package Manager!" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Học về Quản lý Gói phụ thuộc với Swift"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

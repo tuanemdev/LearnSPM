@@ -7,6 +7,7 @@ import PackageDescription
 // nó nói cho SPM version của Swift dùng để build Package
 let package = Package(
     name: "LearnSPM", // Tên Package
+    defaultLocalization: "en",
     platforms: [ // Nền tảng và version tối thiều hỗ trợ
         .iOS(.v16),
         .macOS(.v14)

@@ -5,6 +5,7 @@ import Foundation
 import OtherTarget
 
 // File → New → Package → Library
+// Tài liệu: https://developer.apple.com/documentation/xcode/swift-packages
 public struct LearnSPM {
     public init() { }
     
@@ -22,10 +23,14 @@ public struct LearnSPM {
  
  Tương tự, mỗi một folder trong `Tests` là một Test Target riêng biệt
  
+ Package có thể chứa source code của các ngôn ngữ: Swift, Objective-C/C++, C/C++
+ nhưng mỗi một Target chỉ có thể chứa một loại ngôn ngữ: Swift hoặc C-family
+ 
  Package có thể chứa các file tài nguyên không phải code, các tài nguyên này cần nằm trong thư mục của Target sử dụng nó
  Best practices là tạo một subfolder Resources riêng để quản lý tài nguyên:
  + Nếu resources là: Interface Builder files (XIB, storyboards), Core Data files (xcdatamodeld), Asset catalogs, .lproj thì Xcode sẽ tự nhận dạng đó là file resources, ta không cần làm gì thêm
  + Nếu là file khác thì cần sửa file Package Manifest (ví dụ với file learn_spm.json)
+ Các resources này thậm chí có thể sử dụng trong các App phụ thuộc vào Package này bằng cách khai báo nó (hoặc pathURL) dưới dạng biến public API
  
  Version của Package được quản lý bằng việc đánh Tag với Git, với Tag name là version cần đánh
  Format có dạng: MAJOR.MINOR.PATCH
