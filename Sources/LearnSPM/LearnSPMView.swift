@@ -18,6 +18,12 @@ public struct LearnSPMView: View {
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(height: 200)
+            
+            Button("JSON Decode") {
+                // Khi sử dụng resource trong Package thì phải dùng Bundle.module
+                let product = Bundle.module.decode(Product.self, from: "learn_spm.json")
+                print(product.fruit)
+            }
         }
     }
 }
