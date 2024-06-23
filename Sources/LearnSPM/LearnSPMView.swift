@@ -21,6 +21,7 @@ public struct LearnSPMView: View {
             
             Button("JSON Decode") {
                 // Khi sử dụng resource trong Package thì phải dùng Bundle.module
+                // Bởi vì mỗi subfolder trong Sources là một module riêng biệt
                 let product = Bundle.module.decode(Product.self, from: "learn_spm.json")
                 print(product.fruit)
             }

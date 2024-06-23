@@ -3,6 +3,8 @@
 
 import PackageDescription
 
+// Dòng comment swift-tools-version không phải là một comment bình thường
+// nó nói cho SPM version của Swift dùng để build Package
 let package = Package(
     name: "LearnSPM", // Tên Package
     platforms: [ // Nền tảng và version tối thiều hỗ trợ
