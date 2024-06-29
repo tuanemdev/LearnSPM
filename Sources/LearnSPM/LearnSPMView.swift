@@ -10,10 +10,13 @@ import SwiftUI
 public struct LearnSPMView: View {
     public init() { }
     
+    /// Sẽ không hoạt động với Preview nhưng khi build app thì OK (truy cập lúc runtime)
+    /// Thực tế đây chỉ là làm ví dụ chứ Package chỉ nên được sử dụng để chứa nghiệp vụ Logic và không Localized
     let buttonTitle = String(localized: "JSON Decode", bundle: .module)
     
     public var body: some View {
         VStack {
+            /// Hoạt động OK với cả Preview
             Text("Learn Swift Package Manager!", bundle: .module)
             
             Image(.cactus)
