@@ -19,7 +19,7 @@ let package = Package(
             // Package có thể là Static hoặc Dynamic.
             // Mặc định Xcode sẽ tự động lựa chọn link Package dưới dạng Static hoặc Dynamic. (thực tế là Xcode luôn link Package dưới dạng Static)
             type: .static,
-            targets: ["LearnSPM"]
+            targets: ["LearnSPM", "LearnFramework"]
         ),
     ],
     dependencies: [ // Khai báo các package khác mà Package này phụ thuộc vào
@@ -40,6 +40,10 @@ let package = Package(
         ),
         .target(
             name: "OtherTarget"
+        ),
+        .binaryTarget(
+            name: "LearnFramework",
+            path: "./Sources/LearnFramework.xcframework"
         ),
         .testTarget(
             name: "LearnSPMTests",

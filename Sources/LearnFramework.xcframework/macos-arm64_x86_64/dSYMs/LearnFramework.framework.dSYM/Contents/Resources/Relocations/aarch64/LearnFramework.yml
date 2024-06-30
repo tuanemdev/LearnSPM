@@ -1,0 +1,25 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/nguyentuananh/Library/Developer/Xcode/DerivedData/LearnFramework-erixjsklybjkfffuykdslksvxfke/Build/Intermediates.noindex/ArchiveIntermediates/LearnFramework/InstallationBuildProductsLocation/Library/Frameworks/LearnFramework.framework/Versions/A/LearnFramework'
+relocations:
+  - { offsetInCU: 0x34, offset: 0x10AC8B, size: 0x8, addend: 0x0, symName: _LearnFrameworkVersionString, symObjAddr: 0x0, symBinAddr: 0x3CE0, symSize: 0x0 }
+  - { offsetInCU: 0x69, offset: 0x10ACC0, size: 0x8, addend: 0x0, symName: _LearnFrameworkVersionNumber, symObjAddr: 0x38, symBinAddr: 0x3D18, symSize: 0x0 }
+  - { offsetInCU: 0x27, offset: 0x10ACFD, size: 0x8, addend: 0x0, symName: '-[ObjectiveCLib init]', symObjAddr: 0x0, symBinAddr: 0x3750, symSize: 0x88 }
+  - { offsetInCU: 0x93, offset: 0x10AD69, size: 0x8, addend: 0x0, symName: '-[ObjectiveCLib init]', symObjAddr: 0x0, symBinAddr: 0x3750, symSize: 0x88 }
+  - { offsetInCU: 0xCA, offset: 0x10ADA0, size: 0x8, addend: 0x0, symName: '-[ObjectiveCLib addSwiftLib:]', symObjAddr: 0x88, symBinAddr: 0x37D8, symSize: 0x50 }
+  - { offsetInCU: 0x10D, offset: 0x10ADE3, size: 0x8, addend: 0x0, symName: '-[ObjectiveCLib allSwiftLibObjects]', symObjAddr: 0xD8, symBinAddr: 0x3828, symSize: 0x4 }
+  - { offsetInCU: 0x142, offset: 0x10AE18, size: 0x8, addend: 0x0, symName: '-[ObjectiveCLib swiftLibList]', symObjAddr: 0xDC, symBinAddr: 0x382C, symSize: 0x8 }
+  - { offsetInCU: 0x179, offset: 0x10AE4F, size: 0x8, addend: 0x0, symName: '-[ObjectiveCLib setSwiftLibList:]', symObjAddr: 0xE4, symBinAddr: 0x3834, symSize: 0xC }
+  - { offsetInCU: 0x1BA, offset: 0x10AE90, size: 0x8, addend: 0x0, symName: '-[ObjectiveCLib .cxx_destruct]', symObjAddr: 0xF0, symBinAddr: 0x3840, symSize: 0xC }
+  - { offsetInCU: 0x27, offset: 0x10AF24, size: 0x8, addend: 0x0, symName: '_$s14LearnFramework8SwiftLibC4nameACSS_tcfC', symObjAddr: 0x0, symBinAddr: 0x384C, symSize: 0x5C }
+  - { offsetInCU: 0xC3, offset: 0x10AFC0, size: 0x8, addend: 0x0, symName: '_$s14LearnFramework8SwiftLibCACycfcTo', symObjAddr: 0x234, symBinAddr: 0x3A80, symSize: 0x2C }
+  - { offsetInCU: 0x137, offset: 0x10B034, size: 0x8, addend: 0x0, symName: '_$s14LearnFramework8SwiftLibCMa', symObjAddr: 0x9C, symBinAddr: 0x38E8, symSize: 0x20 }
+  - { offsetInCU: 0x1D0, offset: 0x10B0CD, size: 0x8, addend: 0x0, symName: ___swift_instantiateConcreteTypeFromMangledName, symObjAddr: 0x1A8, symBinAddr: 0x39F4, symSize: 0x40 }
+  - { offsetInCU: 0x1FA, offset: 0x10B0F7, size: 0x8, addend: 0x0, symName: '_$s14LearnFramework8SwiftLibCfETo', symObjAddr: 0x290, symBinAddr: 0x3ADC, symSize: 0x14 }
+  - { offsetInCU: 0x332, offset: 0x10B22F, size: 0x8, addend: 0x0, symName: '_$s14LearnFramework8SwiftLibC4nameACSS_tcfC', symObjAddr: 0x0, symBinAddr: 0x384C, symSize: 0x5C }
+  - { offsetInCU: 0x371, offset: 0x10B26E, size: 0x8, addend: 0x0, symName: '_$s14LearnFramework8SwiftLibC4nameACSS_tcfc', symObjAddr: 0x5C, symBinAddr: 0x38A8, symSize: 0x40 }
+  - { offsetInCU: 0x3E5, offset: 0x10B2E2, size: 0x8, addend: 0x0, symName: '_$s14LearnFramework8SwiftLibC9printNameyyF', symObjAddr: 0xBC, symBinAddr: 0x3908, symSize: 0xEC }
+  - { offsetInCU: 0x4F1, offset: 0x10B3EE, size: 0x8, addend: 0x0, symName: '_$s14LearnFramework8SwiftLibCACycfC', symObjAddr: 0x1E8, symBinAddr: 0x3A34, symSize: 0x20 }
+  - { offsetInCU: 0x505, offset: 0x10B402, size: 0x8, addend: 0x0, symName: '_$s14LearnFramework8SwiftLibCACycfc', symObjAddr: 0x208, symBinAddr: 0x3A54, symSize: 0x2C }
+  - { offsetInCU: 0x55E, offset: 0x10B45B, size: 0x8, addend: 0x0, symName: '_$s14LearnFramework8SwiftLibCfD', symObjAddr: 0x260, symBinAddr: 0x3AAC, symSize: 0x30 }
+...
