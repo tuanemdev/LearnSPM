@@ -26,6 +26,14 @@ public struct LearnSPM {
  Package có thể chứa source code của các ngôn ngữ: Swift, Objective-C/C++, C/C++
  nhưng mỗi một Target chỉ có thể chứa một loại ngôn ngữ: Swift hoặc C-family
  
+ Package có thể phân phối binary framework thông qua SPM với .xcframework
+ nếu file .xcframework nặng thì nên cung cấp thông qua URL bởi vì nó sẽ làm chậm việc checkout với git
+ tính checksum thông qua lệnh: `swift package compute-checksum path/to/LearnFramework.zip`
+ + Ưu điểm: tính bảo mật
+ + Nhược điểm: làm Package hoặc App sử dụng nó khó debug, nền tảng support sẽ phụ thuộc vào binary framework
+ https://developer.apple.com/documentation/xcode/distributing-binary-frameworks-as-swift-packages
+ https://developer.apple.com/videos/play/wwdc2020/10147
+ 
  Package có thể chứa các file tài nguyên không phải code, các tài nguyên này cần nằm trong thư mục của Target sử dụng nó
  Best practices là tạo một subfolder Resources riêng để quản lý tài nguyên:
  + Nếu resources là: Interface Builder files (XIB, storyboards), Core Data files (xcdatamodeld), Asset catalogs, .lproj thì Xcode sẽ tự nhận dạng đó là file resources, ta không cần làm gì thêm

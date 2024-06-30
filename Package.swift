@@ -41,6 +41,10 @@ let package = Package(
         .target(
             name: "OtherTarget"
         ),
+        // Phân phối binary framework thông qua SPM
+        // Có 2 cách:
+        // + nhúng trực tiếp và cung cấp path
+        // + cung cấp URL tới file .zip và mã checksum để kiểm tra tính toàn vẹn
         .binaryTarget(
             name: "LearnFramework",
             path: "./Sources/LearnFramework.xcframework"
