@@ -1,0 +1,49 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "TypeDecl",
+        "name": "LearnStaticLibrary",
+        "printedName": "LearnStaticLibrary",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "doSomething",
+            "printedName": "doSomething()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18LearnStaticLibraryAAC11doSomethingyyFZ",
+            "mangledName": "$s18LearnStaticLibraryAAC11doSomethingyyFZ",
+            "moduleName": "LearnStaticLibrary",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:18LearnStaticLibraryAAC",
+        "mangledName": "$s18LearnStaticLibraryAAC",
+        "moduleName": "LearnStaticLibrary",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "hasMissingDesignatedInitializers": true
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": []
+}
